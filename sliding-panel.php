@@ -3,7 +3,7 @@
  * Plugin Name: Sliding Panel
  * Plugin URI: http://justintadlock.com/archives/2009/06/25/sliding-panel-wordpress-plugin
  * Description: Creates a jQuery-based, fully-widgetized sliding panel.
- * Version: 0.1.0
+ * Version: 0.2.0-alpha-1
  * Author: Justin Tadlock
  * Author URI: http://justintadlock.com
  *
@@ -19,7 +19,7 @@
  * @link http://web-kreation.com/index.php/wordpress/implement-a-nice-clean-jquery-sliding-panel-in-wordpress-27
  *
  * @copyright 2009
- * @version 0.1
+ * @version 0.2.0
  * @author Justin Tadlock
  * @link http://justintadlock.com/archives/2009/06/25/sliding-panel-wordpress-plugin
  * @license http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
