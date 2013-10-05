@@ -1,0 +1,148 @@
+/* Extra div to handle some IE scenarios with absolute positioning. */
+#sliding-panel-container {
+	position: relative;
+	display: table;
+	z-index: 999;
+	width: 100%;
+	}
+
+/* Sliding panel. */
+#sliding-panel {
+	position: absolute;
+	top: 0;
+	z-index: 999;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	}
+
+/* The part of the panel that actually slides. */
+#sliding-panel .panel {
+	overflow: hidden;
+	display: none;
+	position: relative;
+	z-index: 10;
+	width: 100%;
+	height: 180px;
+	background: #040D12;
+	}
+
+/* Widget container. */
+#sliding-panel .panel-content {
+	overflow: hidden;
+	width: 960px;
+	height: 150px;
+	margin: 15px auto;
+	padding: 0;
+	text-align: left;
+	border-left: 1px solid #333;
+	}
+
+/* Sliding panel widgets. */
+#sliding-panel .widget {
+	overflow: hidden;
+	float: left;
+	width: 289px;
+	height: 150px;
+	margin: 0;
+	padding: 0 15px;
+	font: normal normal normal 14px/21px Georgia, Times, 'Times New Roman', serif !important;
+	color: #888;
+	background: transparent;
+	border: none;
+	border-right: 1px solid #333;
+	}
+#sliding-panel .widget-inside {
+	margin: 0;
+	padding: 0;
+	background: transparent;
+	border: none;
+	}
+
+/* Sliding panel widget titles. */
+#sliding-panel .widget-title {
+	margin: 0 0 5px 0;
+	padding: 0;
+	font: normal normal bold 18px/21px Arial, Verdana, sans-serif !important;
+	color: #999;
+	text-transform: none;
+	background: transparent;
+	border: none;
+	}
+
+/* Sliding panel widget lists. */
+#sliding-panel .widget ul {
+	margin: 0 0 10px 20px;
+	list-style: square;
+	}
+#sliding-panel .widget ul li {
+	margin: 0;
+	padding: 0;
+	background: transparent;
+	border: none;
+	}
+
+/* Sliding panel widget links. */
+#sliding-panel .widget a {
+	font-style: italic;
+	color: #eee;
+	text-decoration: none;
+	}
+#sliding-panel .widget a:hover {
+	text-decoration: underline;
+	}
+
+/* Toggle div wrapper. */
+#sliding-panel .tab {
+	position: relative;
+	top: 0;
+	z-index: 9999;
+	height: 37px;
+	border-top: 2px solid #040D12;
+	}
+
+/* Wrapper for the open/close button. */
+#sliding-panel .tab .toggle {
+  	clear: both;
+	display: block;
+	position: relative;
+	width: 960px;
+	height: 35px;
+	line-height: 35px;
+	margin: 0 auto;
+	}
+
+/* Open/close link. */
+#sliding-panel .tab a {
+	display: block;
+	float: right;
+	position: relative;
+	width: 80px;
+	height: 35px;
+	top: -1px;
+	margin: 0;
+	padding: 0;
+	font: normal normal bold 12px/33px Georgia, Times, 'Times New Roman', serif !important;
+	color: #fff;
+  	background: #040D12;
+ 	text-align: center;
+	}
+
+/* Open link. */
+#sliding-panel .tab a.open {
+	}
+
+/* Close link. */
+#sliding-panel .tab a.close {
+	}
+
+/* Open/close link hover. */
+#sliding-panel .tab a:hover {
+	cursor: pointer;
+	text-decoration: underline;
+	}
+
+/* Open/close link array (&urarr;). */
+#sliding-panel .tab a .arrow {
+	font-style: normal;
+	}

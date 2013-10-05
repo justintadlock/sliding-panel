@@ -1,0 +1,46 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Sliding Panel WordPress Plugin\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-06-26 12:21+0900\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Justin Tadlock <justin@justintadlock.com>\n"
+"Language-Team: <justin@justintadlock.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: sliding-panel.php:87
+#@ sliding-panel
+msgid "Sliding Panel"
+msgstr "Pannello scorrevole"
+
+#: sliding-panel.php:130
+#@ sliding-panel
+msgid "Open panel"
+msgstr "Apri il pannello"
+
+#: sliding-panel.php:130
+#@ sliding-panel
+msgid "Open <span class=\"arrow\">&darr;</span>"
+msgstr "Apri <span class=\"arrow\">&darr;</span>"
+
+#: sliding-panel.php:131
+#@ sliding-panel
+msgid "Close panel"
+msgstr "Chiudi il pannello"
+
+#: sliding-panel.php:131
+#@ sliding-panel
+msgid "Close <span class=\"arrow\">&uarr;</span>"
+msgstr "Chiudi <span class=\\\"arrow\\\">&uarr;</span>"
+
