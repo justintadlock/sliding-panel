@@ -141,7 +141,7 @@ final class Sliding_Panel_Plugin {
 
 		if ( is_active_sidebar( 'sliding-panel' ) ) {
 
-			wp_register_script( 'sliding-panel', "{$this->directory_uri}js/panel.js", array( 'jquery' ), '0.1', true );
+			wp_register_script( 'sliding-panel', "{$this->directory_uri}js/sliding-panel.js", array( 'jquery' ), '0.1', true );
 
 			wp_localize_script(
 				'sliding-panel',
@@ -154,7 +154,7 @@ final class Sliding_Panel_Plugin {
 
 			wp_enqueue_script( 'sliding-panel' );
 
-			wp_enqueue_style( 'sliding-panel', "{$this->directory_uri}css/panel.css", false, 0.1, 'screen' );
+			wp_enqueue_style( 'sliding-panel', "{$this->directory_uri}css/sliding-panel.css", false, 0.1, 'screen' );
 		}
 	}
 
