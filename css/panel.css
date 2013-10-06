@@ -1,7 +1,7 @@
 
 /* ====== Wrapper for entire sliding panel ====== */
 
-#sliding-panel {
+#sidebar-sliding-panel {
 	position: absolute;
 	top:      0;
 	display:  none;
@@ -9,13 +9,13 @@
 	z-index:  9999;
 }
 
-	.admin-bar #sliding-panel { top: 28px; }
+	.admin-bar #sidebar-sliding-panel { top: 28px; }
 
-	.admin-bar.mp6 #sliding-panel { top: 32px; }
+	.admin-bar.mp6 #sidebar-sliding-panel { top: 32px; }
 
 		@media screen and ( max-width: 782px ) {
 
-			.admin-bar.mp6 #sliding-panel { top: 46px; }
+			.admin-bar.mp6 #sidebar-sliding-panel { top: 46px; }
 		}
 
 	/* === Inner wrapper for sliding panel === */
@@ -27,14 +27,14 @@
 
 		/* === Sliding Panel sidebar === */
 
-		#sidebar-sliding-panel {
+		.sp-content {
 			display:    none;
 			overflow:   hidden;
 			width:      100%;
 			background: #000;
 		}
 
-			#sidebar-sliding-panel .sp-sidebar-wrap {
+			.sp-content-wrap {
 				overflow:  hidden;
 				max-width: 1200px;
 				margin:    0 auto;
@@ -43,7 +43,7 @@
 
 				/* Widgets */
 
-				#sidebar-sliding-panel .widget {
+				.sp-content .widget {
 					overflow:   hidden;
 					float:      left;
 					width:      30%;
@@ -56,34 +56,34 @@
 					box-sizing: border-box;
 				}
 
-					#sidebar-sliding-panel .widget:nth-child( 4n + 4 ) {
+					.sp-content .widget:nth-child( 4n + 4 ) {
 						clear: both;
 					}
 
 					@media only screen and ( max-width: 768px ) {
 
-						#sidebar-sliding-panel .widget { 
+						.sp-content .widget { 
 							width: 47%; 
 						}
 
-						#sidebar-sliding-panel .widget:nth-child( 4n + 4 ) { 
+						.sp-content .widget:nth-child( 4n + 4 ) { 
 							clear: none; 
 						}
 
-						#sidebar-sliding-panel .widget:nth-child( odd ) { 
+						.sp-content .widget:nth-child( odd ) { 
 							clear: both; 
 						}
 					}
 
 					@media only screen and ( max-width: 480px ) {
 
-						#sidebar-sliding-panel .widget {
+						.sp-content .widget {
 							clear: both;
 							width: 94%;
 						}
 					}
 
-						#sidebar-sliding-panel .widget-title {
+						.sp-content .widget-title {
 							padding:        0;
 							color:          #888;
 							text-transform: none;
@@ -91,12 +91,12 @@
 							border:         none;
 						}
 
-						#sidebar-sliding-panel a {
+						.sp-content a {
 							color:           #fff;
 							text-decoration: none;
 						}
 
-						#sidebar-sliding-panel a:hover {
+						.sp-content a:hover {
 							text-decoration: underline;
 						}
 

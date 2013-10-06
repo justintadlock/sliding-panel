@@ -1,16 +1,16 @@
 <?php if ( is_active_sidebar( 'sliding-panel' ) ) { ?>
 
-	<div id="sliding-panel" class="show-if-js">
+	<aside id="sidebar-sliding-panel" class="sidebar" role="complementary" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
 
 		<div class="sp-wrap">
 
-			<div id="sidebar-sliding-panel" class="sidebar">
+			<div class="sp-content">
 
-				<div class="sp-sidebar-wrap">
+				<div class="sp-content-wrap">
 					<?php dynamic_sidebar( 'sliding-panel' ); ?>
-				</div><!-- .sp-sidebar-wrap -->
+				</div><!-- .sp-content-wrap -->
 
-			</div><!-- #sidebar-sliding-panel -->
+			</div><!-- .sp-content -->
 
 			<div class="sp-toggle">
 				<a href="#"></a>
@@ -18,6 +18,6 @@
 
 		</div><!-- .sp-wrap -->
 
-	</div><!-- #sliding-panel -->
+	</aside><!-- #sliding-panel -->
 
 <?php } ?>
