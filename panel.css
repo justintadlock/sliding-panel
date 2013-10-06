@@ -1,148 +1,129 @@
-/* Extra div to handle some IE scenarios with absolute positioning. */
-#sliding-panel-container {
-	position: relative;
-	display: table;
-	z-index: 999;
-	width: 100%;
-	}
 
-/* Sliding panel. */
+/* ====== Wrapper for entire sliding panel ====== */
+
 #sliding-panel {
 	position: absolute;
-	top: 0;
-	z-index: 999;
-	width: 100%;
-	margin: 0 auto;
-	text-align: center;
+	top:      0;
+	display:  none;
+	width:    100%;
+	z-index:  9999;
+}
+
+	.admin-bar #sliding-panel { top: 28px; }
+
+	.admin-bar.mp6 #sliding-panel { top: 32px; }
+
+		@media screen and ( max-width: 782px ) {
+
+			.admin-bar.mp6 #sliding-panel { top: 46px; }
+		}
+
+	/* === Inner wrapper for sliding panel === */
+
+	.sp-wrap {
+		position: absolute;
+		width:    100%;
 	}
 
-/* The part of the panel that actually slides. */
-#sliding-panel .panel {
-	overflow: hidden;
-	display: none;
-	position: relative;
-	z-index: 10;
-	width: 100%;
-	height: 180px;
-	background: #040D12;
-	}
+		/* === Sliding Panel sidebar === */
 
-/* Widget container. */
-#sliding-panel .panel-content {
-	overflow: hidden;
-	width: 960px;
-	height: 150px;
-	margin: 15px auto;
-	padding: 0;
-	text-align: left;
-	border-left: 1px solid #333;
-	}
+		#sidebar-sliding-panel {
+			display:    none;
+			overflow:   hidden;
+			width:      100%;
+			background: #000;
+		}
 
-/* Sliding panel widgets. */
-#sliding-panel .widget {
-	overflow: hidden;
-	float: left;
-	width: 289px;
-	height: 150px;
-	margin: 0;
-	padding: 0 15px;
-	font: normal normal normal 14px/21px Georgia, Times, 'Times New Roman', serif !important;
-	color: #888;
-	background: transparent;
-	border: none;
-	border-right: 1px solid #333;
-	}
-#sliding-panel .widget-inside {
-	margin: 0;
-	padding: 0;
-	background: transparent;
-	border: none;
-	}
+			#sidebar-sliding-panel .sp-sidebar-wrap {
+				overflow:  hidden;
+				max-width: 1200px;
+				margin:    0 auto;
+				padding:   50px 0 25px;
+			}
 
-/* Sliding panel widget titles. */
-#sliding-panel .widget-title {
-	margin: 0 0 5px 0;
-	padding: 0;
-	font: normal normal bold 18px/21px Arial, Verdana, sans-serif !important;
-	color: #999;
-	text-transform: none;
-	background: transparent;
-	border: none;
-	}
+				/* Widgets */
 
-/* Sliding panel widget lists. */
-#sliding-panel .widget ul {
-	margin: 0 0 10px 20px;
-	list-style: square;
-	}
-#sliding-panel .widget ul li {
-	margin: 0;
-	padding: 0;
-	background: transparent;
-	border: none;
-	}
+				#sidebar-sliding-panel .widget {
+					overflow:   hidden;
+					float:      left;
+					width:      30%;
+					margin:     0 1.5%;
+					padding:    0;
+					color:      #888;
+					background: transparent;
 
-/* Sliding panel widget links. */
-#sliding-panel .widget a {
-	font-style: italic;
-	color: #eee;
-	text-decoration: none;
-	}
-#sliding-panel .widget a:hover {
-	text-decoration: underline;
-	}
+						-moz-box-sizing: border-box;
+					box-sizing: border-box;
+				}
 
-/* Toggle div wrapper. */
-#sliding-panel .tab {
-	position: relative;
-	top: 0;
-	z-index: 9999;
-	height: 37px;
-	border-top: 2px solid #040D12;
-	}
+					#sidebar-sliding-panel .widget:nth-child( 4n + 4 ) {
+						clear: both;
+					}
 
-/* Wrapper for the open/close button. */
-#sliding-panel .tab .toggle {
-  	clear: both;
-	display: block;
-	position: relative;
-	width: 960px;
-	height: 35px;
-	line-height: 35px;
-	margin: 0 auto;
-	}
+					@media only screen and ( max-width: 768px ) {
 
-/* Open/close link. */
-#sliding-panel .tab a {
-	display: block;
-	float: right;
-	position: relative;
-	width: 80px;
-	height: 35px;
-	top: -1px;
-	margin: 0;
-	padding: 0;
-	font: normal normal bold 12px/33px Georgia, Times, 'Times New Roman', serif !important;
-	color: #fff;
-  	background: #040D12;
- 	text-align: center;
-	}
+						#sidebar-sliding-panel .widget { 
+							width: 47%; 
+						}
 
-/* Open link. */
-#sliding-panel .tab a.open {
-	}
+						#sidebar-sliding-panel .widget:nth-child( 4n + 4 ) { 
+							clear: none; 
+						}
 
-/* Close link. */
-#sliding-panel .tab a.close {
-	}
+						#sidebar-sliding-panel .widget:nth-child( odd ) { 
+							clear: both; 
+						}
+					}
 
-/* Open/close link hover. */
-#sliding-panel .tab a:hover {
-	cursor: pointer;
-	text-decoration: underline;
-	}
+					@media only screen and ( max-width: 480px ) {
 
-/* Open/close link array (&urarr;). */
-#sliding-panel .tab a .arrow {
-	font-style: normal;
-	}
+						#sidebar-sliding-panel .widget {
+							clear: both;
+							width: 94%;
+						}
+					}
+
+						#sidebar-sliding-panel .widget-title {
+							padding:        0;
+							color:          #888;
+							text-transform: none;
+							background:     transparent;
+							border:         none;
+						}
+
+						#sidebar-sliding-panel a {
+							color:           #fff;
+							text-decoration: none;
+						}
+
+						#sidebar-sliding-panel a:hover {
+							text-decoration: underline;
+						}
+
+		/* === Toggle button ==== */
+
+		.sp-toggle {
+			clear:      both;
+			max-width:  1200px;
+			margin:     0 auto;
+		}
+
+			.sp-toggle a {
+				display:    inline-block;
+				float:      right;
+				padding:    10px 35px;
+				color:      #d3d3d3;
+				background: #000;
+			}
+
+			.sp-toggle a:hover { color: #d3d3d3; }
+
+				@media only screen and ( max-width: 480px ) {
+
+					.sp-toggle { text-align: center; }
+
+					.sp-toggle a {
+						float: none;
+						margin: 0 auto;
+					}
+				}
