@@ -154,7 +154,7 @@ final class Sliding_Panel_Plugin {
 
 			wp_enqueue_script( 'sliding-panel' );
 
-			wp_enqueue_style( 'sliding-panel', "{$this->directory_uri}js/panel.css", false, 0.1, 'screen' );
+			wp_enqueue_style( 'sliding-panel', "{$this->directory_uri}css/panel.css", false, 0.1, 'screen' );
 		}
 	}
 
