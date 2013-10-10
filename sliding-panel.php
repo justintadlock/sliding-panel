@@ -139,22 +139,36 @@ final class Sliding_Panel_Plugin {
 	 */
 	public function enqueue_scripts() {
 
+		/* Only load scripts if the sliding panel sidebar is active. */
 		if ( is_active_sidebar( 'sliding-panel' ) ) {
 
-			wp_register_script( 'sliding-panel', "{$this->directory_uri}js/sliding-panel.js", array( 'jquery' ), '0.1', true );
+			/* Register the sliding panel script. */
+			wp_register_script( 'sliding-panel', "{$this->directory_uri}js/sliding-panel.js", array( 'jquery' ), '', true );
 
+			/* Get the plugin options. */
+			$settings = get_option(
+				'plugin_sliding_panel', 
+				array(
+					'open_label'  => __( 'Open',  'sliding-panel' ),
+					'close_label' => __( 'Close', 'sliding-panel' )
+				)
+			);
+
+			/* Localize the text strings to pass to the script. */
 			wp_localize_script(
 				'sliding-panel',
 				'sp_l10n',
 				array(
-					'open'  => __( 'Open',  'sliding-panel' ),
-					'close' => __( 'Close', 'sliding-panel' )
+					'open'  => esc_js( $settings['open_label']  ),
+					'close' => esc_js( $settings['close_label'] )
 				)
 			);
 
+			/* Enqueue the sliding panel script. */
 			wp_enqueue_script( 'sliding-panel' );
 
-			wp_enqueue_style( 'sliding-panel', "{$this->directory_uri}css/sliding-panel.css", false, 0.1, 'screen' );
+			/* Enqueue the sliding panel stylesheet. */
+			wp_enqueue_style( 'sliding-panel', "{$this->directory_uri}css/sliding-panel.css" );
 		}
 	}
 
