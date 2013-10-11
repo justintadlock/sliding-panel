@@ -1,37 +1,87 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Sliding Panel WordPress Plugin\n"
+"Project-Id-Version: Sliding Panel Plugin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2009-06-26 12:21+0900\n"
+"POT-Creation-Date: 2013-10-10 20:04-0600\n"
 "PO-Revision-Date: \n"
-"Last-Translator: Justin Tadlock <justin@justintadlock.com>\n"
+"Last-Translator: \n"
 "Language-Team:  <justin@justintadlock.com>\n"
+"Language: en_US\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: English\n"
-"X-Poedit-Country: UNITED STATES\n"
-"X-Poedit-KeywordsList: _e;__\n"
-"X-Poedit-Basepath: .\n"
+"X-Poedit-KeywordsList: _e;__;esc_attr__;esc_attr_e;esc_html__;esc_html_e;_x;"
+"_x:1,2c;_n:1,2;_n\n"
+"X-Poedit-Basepath: ../\n"
+"X-Generator: Poedit 1.5.7\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: sliding-panel.php:87
+#: sliding-panel.php:127 admin/admin.php:64 admin/admin.php:65
+#: admin/admin.php:235
 msgid "Sliding Panel"
 msgstr ""
 
-#: sliding-panel.php:130
-msgid "Open panel"
+#: sliding-panel.php:155 admin/admin.php:88
+msgid "Open"
 msgstr ""
 
-#: sliding-panel.php:130
-msgid "Open <span class=\"arrow\">&darr;</span>"
+#: sliding-panel.php:156 admin/admin.php:89
+msgid "Close"
 msgstr ""
 
-#: sliding-panel.php:131
-msgid "Close panel"
+#: admin/admin.php:105
+msgid "Labels"
 msgstr ""
 
-#: sliding-panel.php:131
-msgid "Close <span class=\"arrow\">&uarr;</span>"
+#: admin/admin.php:113
+msgid "Open Label"
 msgstr ""
 
+#: admin/admin.php:125
+msgid "Close Label"
+msgstr ""
+
+#: admin/admin.php:139
+msgid "Like this plugin?"
+msgstr ""
+
+#: admin/admin.php:147
+msgid "Give Back"
+msgstr ""
+
+#: admin/admin.php:179
+msgid "Input custom \"open\" and \"close\" labels for your sliding panel."
+msgstr ""
+
+#: admin/admin.php:193
+msgid "Here are some ways you can give back:"
+msgstr ""
+
+#: admin/admin.php:208
+msgid "Label displayed when the panel is in a closed state."
+msgstr ""
+
+#: admin/admin.php:221
+msgid "Label displayed when the panel is in an open state."
+msgstr ""
+
+#: admin/admin.php:234
+msgid "Rate this plugin 5 &star;."
+msgstr ""
+
+#: admin/admin.php:235
+#, php-format
+msgid "Link to %s in a blog post, tweet, or post on a social network."
+msgstr ""
+
+#: admin/admin.php:236
+msgid "Make a donation."
+msgstr ""
+
+#: admin/admin.php:251
+msgid "Sliding Panel Settings"
+msgstr ""
+
+#: admin/admin.php:258
+msgid "Update Settings"
+msgstr ""
