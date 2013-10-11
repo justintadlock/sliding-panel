@@ -3,7 +3,7 @@
  * Plugin Name: Sliding Panel
  * Plugin URI: http://themehybrid.com/plugins/sliding-panel
  * Description: A fully-widgetized and responsive sliding panel for your site.
- * Version: 0.2.0-alpha-1
+ * Version: 0.2.0
  * Author: Justin Tadlock
  * Author URI: http://justintadlock.com
  *
