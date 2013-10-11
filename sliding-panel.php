@@ -60,6 +60,9 @@ final class Sliding_Panel_Plugin {
 		/* Internationalize the text strings used. */
 		add_action( 'plugins_loaded', array( $this, 'i18n' ), 2 );
 
+		/* Load the admin files. */
+		add_action( 'plugins_loaded', array( $this, 'admin' ), 4 );
+
 		/* Register sidebars late so ours come after theme sidebars. */
 		add_action( 'widgets_init', array( $this, 'register_sidebars' ), 95 );
 
@@ -105,8 +108,8 @@ final class Sliding_Panel_Plugin {
 	 */
 	public function admin() {
 
-	//	if ( is_admin() )
-	//		require_once( "{$this->directory_path}admin/admin.php" );
+		if ( is_admin() )
+			require_once( "{$this->directory_path}admin/admin.php" );
 	}
 
 	/**
@@ -149,8 +152,8 @@ final class Sliding_Panel_Plugin {
 			$settings = get_option(
 				'plugin_sliding_panel', 
 				array(
-					'open_label'  => __( 'Open',  'sliding-panel' ),
-					'close_label' => __( 'Close', 'sliding-panel' )
+					'label_open'  => __( 'Open',  'sliding-panel' ),
+					'label_close' => __( 'Close', 'sliding-panel' )
 				)
 			);
 
@@ -159,8 +162,8 @@ final class Sliding_Panel_Plugin {
 				'sliding-panel',
 				'sp_l10n',
 				array(
-					'open'  => esc_js( $settings['open_label']  ),
-					'close' => esc_js( $settings['close_label'] )
+					'open'  => esc_js( $settings['label_open']  ),
+					'close' => esc_js( $settings['label_close'] )
 				)
 			);
 
