@@ -6,6 +6,8 @@ Tags: widget, sidebar, slider, jquery, javascript, html5
 Requires at least: 3.6
 Tested up to: 3.7
 Stable tag: 0.2.0
+License: GPLv2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Adds a responsive sliding panel to the top of your WordPress-powered site.
 
@@ -148,8 +150,7 @@ As of version 0.2.0, this plugin will automatically display with all themes. Use
 
 == Screenshots ==
 
-1. Sliding panel in its closed state.
-2. Sliding pane in its open state.
+1. Sliding panel in its open view with widgets.
 
 == Changelog ==
 
