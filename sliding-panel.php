@@ -1,19 +1,29 @@
 <?php
 /**
  * Plugin Name: Sliding Panel
- * Plugin URI: http://justintadlock.com/archives/2009/06/25/sliding-panel-wordpress-plugin
- * Description: Creates a jQuery-based, fully-widgetized sliding panel.
+ * Plugin URI: http://themehybrid.com/plugins/sliding-panel
+ * Description: A fully-widgetized and responsive sliding panel for your site.
  * Version: 0.2.0-alpha-1
  * Author: Justin Tadlock
  * Author URI: http://justintadlock.com
  *
- * @copyright 2009
- * @version 0.2.0
- * @author Justin Tadlock
- * @link http://justintadlock.com/archives/2009/06/25/sliding-panel-wordpress-plugin
- * @license http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ * This program is free software; you can redistribute it and/or modify it under the terms of the GNU 
+ * General Public License as published by the Free Software Foundation; either version 2 of the License, 
+ * or (at your option) any later version.
  *
- * @package SlidingPanel
+ * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without 
+ * even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ *
+ * You should have received a copy of the GNU General Public License along with this program; if not, write 
+ * to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
+ *
+ * @package   SlidingPanel
+ * @version   0.2.0
+ * @since     0.1.0
+ * @author    Justin Tadlock <justin@justintadlock.com>
+ * @copyright Copyright (c) 2009 - 2013, Justin Tadlock
+ * @link      http://themehybrid.com/plugins/sliding-panel
+ * @license   http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 
 final class Sliding_Panel_Plugin {
