@@ -23,7 +23,6 @@
 	.sp-wrap {
 		position: absolute;
 		width:    100%;
-		z-index:  9999;
 		pointer-events: none;
 	}
 
