@@ -23,6 +23,7 @@
 	.sp-wrap {
 		position: absolute;
 		width:    100%;
+		pointer-events: none;
 	}
 
 		/* === Sliding Panel sidebar === */
@@ -32,6 +33,7 @@
 			overflow:   hidden;
 			width:      100%;
 			background: #000;
+			pointer-events: auto;
 		}
 
 			.sp-content-wrap {
@@ -106,6 +108,7 @@
 			clear:      both;
 			max-width:  1200px;
 			margin:     0 auto;
+			pointer-events: auto;
 		}
 
 			.sp-toggle a {
